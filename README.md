@@ -31,3 +31,7 @@ Result:
 Old: 0.1.3
 New: 0.1.4
 ```
+
+## Hatch issue
+
+https://github.com/pypa/hatch/issues/2180
