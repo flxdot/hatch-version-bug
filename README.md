@@ -28,6 +28,6 @@ uvx hatch@1.15.1 version patch
 
 Result:
 ```
-Old: 0.2.22
-New: 0.2.23
+Old: 0.1.3
+New: 0.1.4
 ```
