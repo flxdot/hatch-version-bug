@@ -1,0 +1,19 @@
+[project]
+name = "example"
+requires-python = ">=3.13,<3.15"
+dependencies = []
+dynamic = ["version"]
+
+[tool.hatch.version]
+path = "src/__version__.py"
+tag = false
+source = "regex_commit"
+commit_message = "Bump version {current_version} → {new_version}"
+
+[build-system]
+requires = ["scikit-build-core<=0.11.1", "pybind11>=3.0.0", "hatch-regex-commit"]
+build-backend = "scikit_build_core.build"
+
+[tool.scikit-build.metadata.version]
+provider = "scikit_build_core.metadata.regex"
+input = "src/__version__.py"
